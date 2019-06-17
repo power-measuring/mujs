@@ -27,26 +27,7 @@ If you are building from source you can either use the provided Unix Makefile:
 
 	make release
 
-Or compile the source with your preferred compiler:
+编译arm 版使用 Makefile-arm 文件 即使用命令：
+  make -f Makefile-arm release 
+  make -f makefile-arm debug
 
-	cc -O2 -c one.c -o libmujs.o
-
-INSTALLING
-
-To install the MuJS command line interpreter, static library and header file:
-
-	make prefix=/usr/local install
-
-DOWNLOAD
-
-The latest development source is available directly from the git repository:
-
-	git clone http://git.ghostscript.com/mujs.git
-
-REPORTING BUGS AND PROBLEMS
-
-Report bugs on the ghostscript bugzilla, with MuJS as the selected component.
-
-	http://bugs.ghostscript.com/
-
-The MuJS developers hang out on IRC in the #mupdf channel on irc.freenode.net.
